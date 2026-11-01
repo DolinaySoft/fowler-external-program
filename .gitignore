@@ -1,0 +1,18 @@
+# Vlastní hodnocení pracoviště, které se nemá dostat do veřejného repozitáře (viz README.md)
+Vlastni/
+vlastni/
+
+# Visual Studio, překlad
+.vs/
+bin/
+obj/
+*.user
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Log a soubory z běhu (mohou obsahovat osobní údaje)
+*.log
+*.log.old

@@ -1,0 +1,8 @@
+﻿<Application x:Class="Evaluator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             ShutdownMode="OnExplicitShutdown">
+    <!-- bez StartupUri: program nema okno, spousti ho Fowler s parametry a ceka na jeho konec (App.xaml.cs) -->
+    <Application.Resources>
+    </Application.Resources>
+</Application>
