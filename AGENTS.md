@@ -1,6 +1,6 @@
 # Pokyny pro AI asistenta
 
-Repozitář je šablona externího programu pro audiologický program Fowler (popis v README.md). Program přečte data
+Repozitář je šablona externího programu pro program Fowler (popis v README.md). Program přečte data
 vyšetření předaná Fowlerem, předá je hodnocení a zapíše odpověď. Šablona žádné hodnocení neobsahuje. Tvým úkolem
 bývá doplnit hodnocení podle postupu, který určí uživatel (lékař nebo vývojář pracoviště).
 

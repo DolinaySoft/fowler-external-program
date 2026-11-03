@@ -1,7 +1,8 @@
 # Externí program pro Fowler – šablona pro vlastní hodnocení pracoviště
 
-Audiologický program **Fowler** umí předat uložené vyšetření (tónovou audiometrii, tympanometrii nebo slovní
-audiometrii) externímu programu pracoviště a jeho odpověď vložit do okna Hodnotit, kde ji uživatel zkontroluje.
+Program **Fowler** (přenos dat z audiometrů a tympanometrů) umí předat uložené vyšetření (tónovou audiometrii,
+tympanometrii nebo slovní audiometrii) externímu programu pracoviště a jeho odpověď vložit do okna Hodnotit, kde ji
+uživatel zkontroluje.
 Tento repozitář obsahuje šablonu takového programu v C# a v Pythonu a popis formátu předávaných dat.
 
 **Šablona neobsahuje žádné hodnocení.** Přečte předaná data, rozdělí je podle části vyšetření a zapíše odpověď.
