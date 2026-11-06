@@ -8,6 +8,25 @@ Tento repozitář obsahuje šablonu takového programu v C# a v Pythonu a popis 
 **Šablona neobsahuje žádné hodnocení.** Přečte předaná data, rozdělí je podle části vyšetření a zapíše odpověď.
 Samotné hodnocení si doplní pracoviště, a to jen pro části a údaje, které chce.
 
+## Dvě cesty: spouštěč skriptů, nebo vlastní program
+
+Pracoviště bez vývojáře nemusí program psát ani překládat. Hotový externí program
+[**spouštěč skriptů**](https://github.com/DolinaySoft/fowler-script-runner) (`spoustec.exe`) vznikl podle této
+šablony a pracoviště k němu dodá jen krátké skripty v JavaScriptu, např. s pomocí AI asistenta. Tato šablona je pro
+ty, kdo chtějí nebo potřebují vlastní program.
+
+| | [spouštěč skriptů](https://github.com/DolinaySoft/fowler-script-runner) | šablona vlastního programu (tento repozitář) |
+|---|---|---|
+| pro koho | pracoviště, lékař (i s pomocí AI asistenta) | vývojář pracoviště nebo dodavatel softwaru |
+| co pracoviště dodá | jen skripty v JavaScriptu, bez překladu a vývojových nástrojů | vlastní program v C# nebo Pythonu |
+| co je hotové | celý program: převzetí dat, kontrola výsledku, testovací režim s protokolem, otisk skriptů v odpovědi | kostra programu: čtení dat a zápis odpovědi |
+| volnost | jen data předaná Fowlerem, standardní JavaScript, limity času a paměti | libovolný jazyk a knihovny, napojení na vlastní systémy |
+| kdy zvolit | hodnocení chcete naprogramovat co nejjednodušeji | potřebujete víc, než skripty umožní, nebo píšete vlastní implementaci |
+
+Formát předaných dat a odpovědi je pro obě cesty stejný ([docs/format.md](docs/format.md)) a Fowler mezi nimi
+nerozlišuje. Žádná z nich neobsahuje hodnocení, to vždy dodá pracoviště. Kdo píše vlastní program, může se
+spouštěčem inspirovat: je to jedna hotová implementace této šablony (C#, zdrojový kód v jeho složce `src`).
+
 ## Odpovědnost za hodnocení
 
 - Fowler výsledky vyšetření zaznamenává, zobrazuje a předává dál (dekurz, tisk, export). Hodnocení vyšetření,
