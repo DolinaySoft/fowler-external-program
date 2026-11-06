@@ -36,9 +36,11 @@ Obsah: [Spuštění programu](#spuštění-programu) · [Předávaná data](#př
      (na velikosti písmen nezáleží; cesty mohou obsahovat mezery, proto je dejte do uvozovek).
      Prázdné = `"%VSTUP%" "%VYSTUP%"`.
    - `vstup`, `vystup`: soubory pro předání. Prázdné = `hodnoceni_vstup.json` a `hodnoceni_vystup.json`.
-   - `automaticky=1`: po stisku Hodnotit (audiogram, tympanometrie) se otevře okno hodnocení a program se hned spustí.
-     Jinak se spouští tlačítkem Externí program... v okně Hodnotit. Slovní audiometrie okno Hodnotit nemá, program se
-     spouští vždy tlačítkem Externí program... pod poli SRT.
+   - `automaticky=1`: po stisku Hodnotit (audiogram, tympanometrie) se otevře okno hodnocení a program se hned spustí,
+     ale jen když v okně ještě není nic vyplněno, aby jeho odpověď nepřepsala předchozí hodnocení (u tympanometrie
+     se výsledek reflexu poslaný přístrojem za vyplněný nepočítá). Jinak se spouští tlačítkem Externí program...
+     v okně Hodnotit. Slovní audiometrie okno Hodnotit nemá, program se spouští vždy tlačítkem Externí program...
+     pod poli SRT.
 2. **Soubory:** před spuštěním Fowler smaže starou odpověď (když to nejde, program nespustí) a zapíše vstupní soubor.
    Po skončení programu se oba soubory smažou, protože obsahují osobní údaje.
 3. **Běh:** program se spustí ve své složce (u skriptu je to složka interpretu, viz README verze pro Python).
